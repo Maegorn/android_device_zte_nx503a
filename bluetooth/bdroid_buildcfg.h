@@ -24,6 +24,4 @@
 /* Defined if the kernel does not have support for CLOCK_BOOTTIME_ALARM */
 #define KERNEL_MISSING_CLOCK_BOOTTIME_ALARM TRUE
 
-#define BTM_BLE_ADV_TX_POWER {-21, -15, -7, 1, 9}
-
 #endif

@@ -169,7 +169,6 @@ PRODUCT_PACKAGES += \
 # Browser
 PRODUCT_PACKAGES += \
     Gello
-
 # Doze mode
 PRODUCT_PACKAGES += \
     Nx503aDoze
@@ -183,7 +182,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/gps/gps.conf:system/etc/gps.conf \
     $(LOCAL_PATH)/gps/izat.conf:system/etc/izat.conf \
     $(LOCAL_PATH)/gps/quipc.conf:system/etc/quipc.conf \
-    $(LOCAL_PATH)/gps/sap.conf:system/etc/sap.conf 
+    $(LOCAL_PATH)/gps/sap.conf:system/etc/sap.conf
 
 # IRSC
 PRODUCT_COPY_FILES += \
@@ -231,12 +230,24 @@ PRODUCT_PACKAGES += \
 # Ramdisk
 PRODUCT_PACKAGES += \
     fstab.qcom \
+    init.class_main.sh \
+    init.mdm.sh \
     init.nubia.sh \
     init.nubia.usb.rc \
+    init.qcom.class_core.sh \
+    init.qcom.early_boot.sh \
+    init.qcom.factory.sh \
     init.qcom.rc \
+    init.qcom.sh \
+    init.qcom.ssr.sh \
+    init.qcom.syspart_fixup.sh \
+    init.qcom.testscripts.sh \
+    init.qcom.uicc.sh \
     init.recovery.qcom.rc \
+    init.qcom.usb.rc \
     init.qcom.usb.sh \
-    ueventd.qcom.rc 
+    init.target.rc \
+    ueventd.qcom.rc
 
 # Thermal config
 PRODUCT_COPY_FILES += \
@@ -250,7 +261,9 @@ PRODUCT_PACKAGES += \
 
 # WiFi
 PRODUCT_PACKAGES += \
+    macloader \
     hostapd \
+    hostapd_default.conf \
     dhcpcd.conf \
     libwpa_client \
     wpa_supplicant \
@@ -264,6 +277,21 @@ PRODUCT_PACKAGES += \
     linville.key.pub.pem
 
 PRODUCT_PACKAGES += \
+    giflib
+
+PRODUCT_PACKAGES += \
+    WCNSS_cfg.dat \
+    WCNSS_qcom_cfg.ini \
+    libnetcmdiface \
+    libwcnss_qmi
+
+PRODUCT_PACKAGES += \
+    libcurl \
+    libqsap_sdk \
+    libQWiFiSoftApCfg \
+    wcnss_service
+
+PRODUCT_PACKAGES += \
     libion
 
 PRODUCT_PACKAGES += \
@@ -273,7 +301,20 @@ PRODUCT_PACKAGES += \
 
 # etc
 PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/hcidump.sh:system/etc/hcidump.sh \
+    $(LOCAL_PATH)/configs/hsic.control.bt.sh:system/etc/hsic.control.bt.sh \
+    $(LOCAL_PATH)/configs/init.ath3k.bt.sh:system/etc/init.ath3k.bt.sh \
+    $(LOCAL_PATH)/configs/init.crda.sh:system/etc/init.crda.sh \
+    $(LOCAL_PATH)/configs/init.qcom.audio.sh:system/etc/init.qcom.audio.sh \
+    $(LOCAL_PATH)/configs/init.qcom.bt.sh:system/etc/init.qcom.bt.sh \
+    $(LOCAL_PATH)/configs/init.qcom.coex.sh:system/etc/init.qcom.coex.sh \
+    $(LOCAL_PATH)/configs/init.qcom.efs.sync.sh:system/etc/init.qcom.efs.sync.sh \
+    $(LOCAL_PATH)/configs/init.qcom.fm.sh:system/etc/init.qcom.fm.sh \
     $(LOCAL_PATH)/configs/init.qcom.modem_links.sh:system/etc/init.qcom.modem_links.sh \
+    $(LOCAL_PATH)/configs/init.qcom.post_boot.sh:system/etc/init.qcom.post_boot.sh \
+    $(LOCAL_PATH)/configs/init.qcom.sdio.sh:system/etc/init.qcom.sdio.sh \
+    $(LOCAL_PATH)/configs/init.qcom.wifi.sh:system/etc/init.qcom.wifi.sh \
+    $(LOCAL_PATH)/configs/qca6234-service.sh:system/etc/qca6234-service.sh \
     $(LOCAL_PATH)/configs/usf_post_boot.sh:system/etc/usf_post_boot.sh
 
 # Key layouts and touchscreen
@@ -295,11 +336,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/tp_node.sh:system/bin/tp_node.sh
 
-
-#Google's stuff   
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.com.google.clientidbase=android-zte \
     ro.com.google.clientidbase.ms=android-zte \
     ro.com.google.clientidbase.am=android-zte \
     ro.com.google.clientidbase.gmm=android-zte \
-    ro.com.google.clientidbase.yt=android-zte     
+    ro.com.google.clientidbase.yt=android-zte

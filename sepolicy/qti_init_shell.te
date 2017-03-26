@@ -4,3 +4,6 @@ allow qti_init_shell sysfs_battery_supply:file getattr;
 allow qti_init_shell system_data_file:lnk_file create;
 allow qti_init_shell system_data_file:lnk_file unlink;
 allow qti_init_shell sysfs_devices_system_cpu:file setattr;
+allow qti_init_shell bluetooth_loader_exec:file { open read };
+allow qti_init_shell sysfs_battery_supply:file setattr;
+allow qti_init_shell ctl_default_prop:property_service set;

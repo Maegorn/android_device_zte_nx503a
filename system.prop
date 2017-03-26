@@ -16,7 +16,7 @@ persist.qcril_uim_vcc_feature=1
 
 telephony.lteOnCdmaDevice=1
 ro.telephony.default_cdma_sub=0
-ro.telephony.default_network=7
+ro.telephony.default_network=11
 ro.telephony.call_ring.multiple=false 
 
 persist.radio.custom_ecc=1
@@ -95,6 +95,7 @@ media.aac_51_output_enabled=true
 #Wifi
 wifi.interface=wlan0
 persist.sys.wlan.optimize=false
+ro.sys.umsdirtyratio=20
 
 #Data
 ro.use_data_netmgrd=true

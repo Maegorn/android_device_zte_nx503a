@@ -181,5 +181,12 @@
 /dev/uio1                 0660   system     system
 /dev/uio2                 0660   system     system
 
+/dev/pn547 0660 nfc nfc
+/dev/pn544 0660 nfc nfc
+
+mkdir /data/nfc 660 nfc nfc
+mkdir /data/nfc/param 660 nfc nfc
+/dev/bcm2079x 0660 nfc nfc
+
 # drv2605 LRA vibrator
 /dev/drv2605              0660   system     system

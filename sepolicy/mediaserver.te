@@ -1,0 +1,2 @@
+#============= mediaserver ==============
+allow mediaserver camera_device:chr_file { ioctl open read write };

@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2016 The CyanogenMod Project
+# Copyright (C) 2017 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -143,10 +143,6 @@ ifeq ($(WITH_TWRP),true)
 else
 	BOARD_RECOVERYIMAGE_PARTITION_SIZE := 20971520
 endif
-
-# Init msm8974
-TARGET_INIT_VENDOR_LIB := libinit_msm8974
-TARGET_RECOVERY_DEVICE_MODULES := libinit_msm8974
 
 # GPS
 BOARD_VENDOR_QCOM_LOC_PDK_FEATURE_SET := true
