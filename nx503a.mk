@@ -134,10 +134,6 @@ PRODUCT_PACKAGES += \
     camera.msm8974 \
     Snap
     
-# Connectivity Engine support
-PRODUCT_PACKAGES += \
-    libcnefeatureconfig
-
 # Compatibility
 PRODUCT_PACKAGES += \
     libboringssl-compat \
