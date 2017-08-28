@@ -40,6 +40,7 @@ dev.pm.dyn_samplingrate=1
 ro.hdmi.enable=true
 persist.demo.hdmirotationlock=false
 ro.qualcomm.cabl=0
+debug.hwui.use_buffer_age=false
 
 #Graphics
 ro.sf.lcd_density=480
