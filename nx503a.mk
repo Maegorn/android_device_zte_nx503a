@@ -110,8 +110,8 @@ PRODUCT_PACKAGES += \
     tinymix
 
 # Bluetooth
-#PRODUCT_PACKAGES += \
-#    android.hardware.bluetooth@1.0-impl
+PRODUCT_PACKAGES += \
+    android.hardware.bluetooth@1.0-impl
 
 # Acdbdata
 PRODUCT_COPY_FILES += \
@@ -278,6 +278,7 @@ PRODUCT_PACKAGES += \
 
 # WiFi
 PRODUCT_PACKAGES += \
+    android.hardware.wifi@1.0-service \
     hostapd \
     dhcpcd.conf \
     libwpa_client \
