@@ -50,6 +50,9 @@ TARGET_BOARD_INFO_FILE := $(LOCAL_PATH)/board-info.txt
 # Shutdown
 TARGET_INIT_UMOUNT_AND_FSCK_IS_UNSAFE := true
 
+#Kernel Headers
+PRODUCT_VENDOR_KERNEL_HEADERS := device/zte/nx503a/kernel-headers
+
 # Kernel
 BOARD_KERNEL_CMDLINE := console=null androidboot.hardware=qcom user_debug=23 msm_rtb.filter=0x37 ehci-hcd.park=3 androidboot.bootdevice=msm_sdcc.1 androidboot.selinux=permissive
 BOARD_KERNEL_SEPARATED_DT := true
@@ -207,7 +210,7 @@ endif
 TARGET_NO_RPC := true
 
 # SELinux
-include device/qcom/sepolicy/sepolicy.mk
+include device/lineage/sepolicy/qcom/sepolicy.mk
 
 BOARD_SEPOLICY_DIRS += \
     $(LOCAL_PATH)/sepolicy
