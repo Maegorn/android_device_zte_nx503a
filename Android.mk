@@ -20,6 +20,7 @@
 # are responsible for having their own logic, for fine-grained control.
 
 LOCAL_PATH := $(call my-dir)
+LOCAL_STATIC_LIBRARIES := libbase
 
 ifeq ($(TARGET_DEVICE),nx503a)
 
