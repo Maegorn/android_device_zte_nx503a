@@ -64,7 +64,8 @@ PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 
 # Bluetooth
 PRODUCT_PACKAGES += \
-    bdAddrLoader
+    bdAddrLoader \
+    android.hardware.bluetooth@1.0-impl
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/bluetooth/bt_vendor.conf:system/etc/bluetooth/bt_vendor.conf
@@ -95,6 +96,8 @@ $(call inherit-product-if-exists, frameworks/native/build/phone-xxhdpi-2048-hwui
 
 # Audio
 PRODUCT_PACKAGES += \
+    android.hardware.audio@2.0-impl \
+    android.hardware.audio.effect@2.0-impl \
     audiod \
     audio.a2dp.default \
     audio_policy.msm8974 \
@@ -146,6 +149,10 @@ PRODUCT_PACKAGES += \
 
 # Display
 PRODUCT_PACKAGES += \
+    android.hardware.graphics.allocator@2.0-impl \
+    android.hardware.graphics.mapper@2.0-impl \
+    android.hardware.graphics.composer@2.1-impl \
+    android.hardware.graphics.memtrack@1.0-impl \
     copybit.msm8974 \
     gralloc.msm8974 \
     hwcomposer.msm8974 \
@@ -179,6 +186,7 @@ PRODUCT_PACKAGES += \
 
 # GPS
 PRODUCT_PACKAGES += \
+    android.hardware.gnss@1.0-impl \
     gps.msm8974
 
 PRODUCT_COPY_FILES += \
@@ -229,6 +237,7 @@ PRODUCT_PACKAGES += \
 
 # Power
 PRODUCT_PACKAGES += \
+    android.hardware.power@1.0-impl \
     power.msm8974
 
 # Ramdisk
@@ -251,8 +260,17 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     com.android.future.usb.accessory
 
+#Sensors
+PRODUCT_PACKAGES += \
+    android.hardware.sensors@1.0-impl
+
+# Vibrator
+PRODUCT_PACKAGES += \
+    android.hardware.vibrator@1.0-impl
+
 # WiFi
 PRODUCT_PACKAGES += \
+    android.hardware.wifi@1.0-service \
     hostapd \
     dhcpcd.conf \
     libwpa_client \
