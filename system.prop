@@ -34,6 +34,7 @@ debug.mdpcomp.logs=0
 vidc.debug.level=1
 
 #Display
+debug.hwui.use_buffer_age=false
 persist.hwc.mdpcomp.enable=true
 ro.opengles.version=196608
 dev.pm.dyn_samplingrate=1
