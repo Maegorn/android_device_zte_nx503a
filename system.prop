@@ -79,6 +79,8 @@ audio.offload.gapless.enabled=false
 qcom.hw.aac.encoder=true
 persist.speaker.prot.enable=false
 
+persist.media.treble_omx=false
+
 #Dolby DS1 DOLBY_UDC
 dmid=3067269873
 
