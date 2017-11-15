@@ -108,12 +108,10 @@ BACKLIGHT_PATH := /sys/class/leds/lcd-backlight/brightness
 BOARD_CHARGER_SHOW_PERCENTAGE := true
 BOARD_CHARGER_ENABLE_SUSPEND := true
 
-# CM Hardware
+# LINEAGEHW
 TARGET_TAP_TO_WAKE_NODE := "/data/configs/easy_wakeup_gesture"
-BOARD_USES_CYANOGEN_HARDWARE := true
 BOARD_HARDWARE_CLASS += \
-    hardware/cyanogen/cmhw \
-    device/zte/nx503a/cmhw
+    device/zte/nx503a/lineagehw
 
 # Disable memcpy_base.S optimization
 TARGET_CPU_MEMCPY_BASE_OPT_DISABLE := true
