@@ -24,7 +24,7 @@ on early-init
 
 on init
     # BoringSSL hacks		
-     export LD_SHIM_LIBS /system/vendor/lib/libmmqjpeg_codec.so|libboringssl-compat.so:/system/vendor/lib/libwvm.so|libshim_wvm.so:/system/lib/libril.so|libril_shim.so
+     export LD_SHIM_LIBS /system/vendor/lib/libmmqjpeg_codec.so|libboringssl-compat.so:/system/vendor/lib/libwvm.so|libshim_wvm.so:/vendor/lib/libril.so|libril_shim.so
  
      # Set permissions for persist partition
      mkdir /persist 0771 system system
