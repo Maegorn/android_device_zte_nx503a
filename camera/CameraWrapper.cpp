@@ -36,6 +36,13 @@
 #include <camera/Camera.h>
 #include <camera/CameraParameters.h>
 
+const char CameraParameters::BEAUTY_SHOT_OFF[] = "beauty-shot"; \
+const char CameraParameters::BEAUTY_SHOT_ON[] = "beauty-shot"; \
+const char CameraParameters::FOCUS_MODE_MANUAL_POSITION[] = "manual-position"; \
+const char CameraParameters::WHITE_BALANCE_MANUAL_CCT[] = "white-balance-manual"; \
+const char CameraParameters::OBJECT_TRACKING_ON[] = "object-tracking"; \
+const char CameraParameters::OBJECT_TRACKING_OFF[] = "object-tracking";
+
 static android::Mutex gCameraWrapperLock;
 static camera_module_t *gVendorModule = 0;
 
